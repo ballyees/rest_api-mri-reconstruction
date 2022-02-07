@@ -1,4 +1,5 @@
 # models
+.vscode/*
 models/*-64*
 */models/*-64*
 # Byte-compiled / optimized / DLL files
