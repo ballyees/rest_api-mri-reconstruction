@@ -14,11 +14,10 @@ async def test(request):
     return json({})
 
 # host = '127.0.0.1'
-host = '0.0.0.0'
-port = 8000
+# host = '0.0.0.0'
 if __name__ == '__main__':
     try:
-        app.run(host=host, port=port, auto_reload=False)
+        app.run(auto_reload=False)
     except KeyboardInterrupt:
         exit(1)
         # cmd command for kill all python process
