@@ -1,4 +1,3 @@
-import tensorflow as tf
 from keras.models import load_model
 import base64
 from io import BytesIO
