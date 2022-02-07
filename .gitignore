@@ -1,5 +1,6 @@
 # models
-models/*
+models/*-64*
+*/models/*-64*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
