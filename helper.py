@@ -1,4 +1,5 @@
 import tensorflow as tf
+from keras.models import load_model
 import base64
 from io import BytesIO
 from PIL import Image
@@ -7,8 +8,8 @@ import numpy as np
 from os.path import join, dirname, abspath
 
 import cv2
-def load_model(path):
-    return tf.keras.models.load_model(join(dirname(abspath(__file__)), path))
+def load_keras_model(path):
+    return load_model(join(dirname(abspath(__file__)), path))
 
 def read_image_base64(image):
     image = base64.b64decode(image)
