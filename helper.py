@@ -24,6 +24,7 @@ def round_image(image_norm):
 
 def image_to_json(image):
     image = np.squeeze(image)
+    image = cv2.GaussianBlur(image, (3,3),cv2.BORDER_DEFAULT)
     image = round_image(image)
     _, img_bytes = cv2.imencode('.png', image)
     img_bytes = base64.b64encode(img_bytes)
