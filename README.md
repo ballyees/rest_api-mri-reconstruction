@@ -16,3 +16,6 @@ model run on http://localhost:8000
 
 send image with json data `keyword` "file" and encoding with base64 encoding see on `test.py` line 13 -> 21 to http://localhost:8000/{fast,slow}/{3x,5x,8x}
 and get response image base64 encoding on data with `keyword` "response"
+
+## dataset
+if you want dataset you can send request dataset to https://fastmri.med.nyu.edu/ and accept Agreement
